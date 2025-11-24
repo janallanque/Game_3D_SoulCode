@@ -8,6 +8,7 @@ public class NPC_AI : MonoBehaviour
     private UnityEngine.AI.NavMeshAgent navMeshAgent;
     private Animator anim;
     public LayerMask playerLayer;
+    public GameObject hitbox;
 
     [Header ("Variables")]
     public int currentWaypointIndex = 0;
@@ -73,6 +74,7 @@ public class NPC_AI : MonoBehaviour
         {
             Debug.Log("Player detectado!");
             isPlayerDetected = true;
+            hitbox.SetActive(true);
         }
     }
 
@@ -83,6 +85,7 @@ public class NPC_AI : MonoBehaviour
             Debug.Log("Player saiu do raio de interação!");
             isPlayerDetected = false;
             navMeshAgent.isStopped = false;
+            hitbox.SetActive(false);
         }
     }
 }
