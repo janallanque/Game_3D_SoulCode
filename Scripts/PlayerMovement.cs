@@ -34,7 +34,7 @@ public class PlayerMoviment : MonoBehaviour
 
     public void Move()
     {
-        Debug.Log("Executando o movimento do personagem...");
+        //Debug.Log("Executando o movimento do personagem...");
 
         float horizontal = 0f;
         float vertical = 0f;
@@ -68,7 +68,7 @@ public class PlayerMoviment : MonoBehaviour
 
     public void Jump()
     {
-        Debug.Log("Estou no chão?" + isGround);
+       // Debug.Log("Estou no chão?" + isGround);
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGround)
         {

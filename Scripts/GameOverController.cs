@@ -15,7 +15,7 @@ public class GameOverController : MonoBehaviour
     IEnumerator LoadAfterSeconds()
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
 }

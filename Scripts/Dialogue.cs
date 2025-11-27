@@ -14,7 +14,7 @@ public class Dialogue : MonoBehaviour
 
     void Start()
     {
-        
+        StartDialogue();
     }
 
     void Update()
@@ -76,6 +76,7 @@ public class Dialogue : MonoBehaviour
                 Debug.Log("Jogador saiu do raio de interação com o NPC");
             }
             onRadious = false;
+
             if (isDialogueActive)
             {
                 EndDialogue();

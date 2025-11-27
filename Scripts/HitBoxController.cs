@@ -8,6 +8,7 @@ public class HitBoxController : MonoBehaviour
     
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player atingido! Carregando Game Over...");
             SceneManager.LoadScene(2);
         }
 
